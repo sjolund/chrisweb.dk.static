@@ -1,0 +1,13 @@
+---
+layout: page
+title: Test page
+---
+
+<div>
+{% include_relative test_partial1.html %}
+</div>
+
+<div>
+{% capture my_include %}{% include_relative test_partial2.md %}{% endcapture %}
+{{ my_include | markdownify }}
+</div>
